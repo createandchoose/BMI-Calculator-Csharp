@@ -139,5 +139,21 @@ namespace BMICalculator
             l3.Text = "";
             l4.Text = "";
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            string date = DateTime.Now.ToLongTimeString();
+            string date1 = DateTime.Now.ToShortTimeString();
+            string date2 = DateTime.Now.ToString();
+            string date3 = DateTime.Now.ToShortDateString();
+            string datetext = DateTime.Now.ToLongDateString();
+            label2.Text = date;
+            label8.Text = datetext;
+        }
     }
 }
